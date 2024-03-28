@@ -29,10 +29,6 @@
     gap: 30px;
 }
 
-.container-component {
-
-}
-
 .title-component {
     font-size: 24px;
     padding-bottom: 20px;
@@ -46,9 +42,6 @@
 }   
 .title-code-component {
     color: #57a865;
-
-}
-.code {
 
 }
 
