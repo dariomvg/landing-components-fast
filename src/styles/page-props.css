@@ -1,0 +1,59 @@
+.section-props {
+    width: 100%;
+    height: 100vh;
+    background-color: #0d0f14;
+    padding: 10px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-props {
+    width: 60%;
+    overflow-y: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+}
+.title-props {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+
+table {
+  background-color: #171717;
+  color: #fff;
+  border:none;
+
+}  
+
+td, th {
+    padding: 10px;
+    border: 1px solid #898989; 
+}
+
+.list-props {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.item-prop {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-prop {
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+.detail-prop {
+    font-size: 20px;
+    color: #969595;
+}

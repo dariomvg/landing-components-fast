@@ -1,0 +1,143 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Line from "../components/Line.astro";
+import "../styles/page-props.css";
+---
+
+<Layout
+title="props - props que reciben los componentes" 
+description="página de muestra todas las props que se reciben y que componentes pueden recibirlas, aparte de para que sirve cada prop."
+>
+    <main class="section-props">
+        <div id="props" class="content-props">
+            <h1 class="title-props">Props</h1>
+           <Line />
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Components</th>
+                        <th>Props</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Button</td>
+                        <td>bg - onClick - children</td>
+                    </tr>
+                    <tr>
+                        <td>Badge</td>
+                        <td>bg - width - variant - children</td>
+                    </tr>
+                    <tr>
+                        <td>Toggle</td>
+                        <td>No recibe props</td>
+                    </tr>
+                    <tr>
+                        <td>Loader</td>
+                        <td>No recibe props</td>
+                    </tr>
+                    <tr>
+                        <td>Collapse</td>
+                        <td>title - bg(dark, light) - width - children</td>
+                    </tr>
+                    <tr>
+                        <td>Modal</td>
+                        <td>titleButton - children </td>
+                    </tr>
+                    <tr>
+                        <td>CarrouselImages</td>
+                        <td>images - auto - time - width - height</td>
+                    </tr>
+                    <tr>
+                        <td>Card</td>
+                        <td>bg(dark, light)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <Line />
+            <ul class="list-props">
+                <li class="item-prop">
+                    <h4 class="title-prop">bg</h4>
+                    <p class="detail-prop">
+                        A través de es la prop bg le colocas un background-color al componente.
+                        puedes ver los colores disponibles en <a href="/colores">sección colores</a>
+                        los únicos componentes que reciben bg pero no colores son: Card y Collapse
+                        ya que ellos reciben: dark ó light.
+                        recibe un String
+                    </p>
+                </li>
+                <li class="item-prop">
+                    <h4 class="title-prop">title</h4>
+                    <p class="detail-prop">
+                       La prop title es el título que se ve en el componente Collapse.
+                       recibe un String
+                    </p>
+                </li>
+                <li class="item-prop">
+                    <h4 class="title-prop">width</h4>
+                    <p class="detail-prop">
+                        Es para determinar la anchura de un componente para hacerlo más flexible
+                        a los proyectos.
+                        recibe un String
+                    </p>
+                </li>
+                <li class="item-prop">
+                    <h4 class="title-prop">height</h4>
+                    <p class="detail-prop">
+                        Es para determinar la altura de un componente para hacerlo más flexible
+                        a los proyectos.
+                        recibe un String
+                    </p>
+                </li>
+                <li class="item-prop">
+                    <h4 class="title-prop">time</h4>
+                    <p class="detail-prop">
+                        La recibe solo en componente CarrouselImages y sirve para determinar 
+                        el tiempo de cambio de una imagen a la otra
+                        por defecto es true y recibe un Numero.
+                    </p>
+                </li>
+                <li class="item-prop">
+                    <h4 class="title-prop">auto</h4>
+                    <p class="detail-prop">
+                        La recibe solo en componente CarrouselImages y sirve para determinar 
+                        si el carrousel las imagenes se pasen una a otra automáticamente o no.
+                        por defecto es true y recibe un Boolean.
+                    </p>
+                </li>
+                <li class="item-prop">
+                    <h4 class="title-prop">onClick</h4>
+                    <p class="detail-prop">
+                        La ricibe tanto el componente Button como Toggle, sirve para pasar una funcion
+                        y que ese boton o toggle la ejecuten y así hacerlo más dinámico.
+                        recibe una funcion
+                    </p>
+                </li>
+                <li class="item-prop">
+                    <h4 class="title-prop">variant</h4>
+                    <p class="detail-prop">
+                        Esta prop variant la recibe el componente Badge, y una alternativa al fondo
+                        de un solo color, es una variante a bg, por lo que no pueden ir juntos.
+                        recibe un String
+                    </p>
+                </li>
+                <li class="item-prop">
+                    <h4 class="title-prop">images</h4>
+                    <p class="detail-prop">
+                        Esta prop Array, no tiene por que llamarse así, debe ser un array de imagenes.
+                        que solo recibe CarrouselImages.
+                        recibe un Array
+                    </p>
+                </li>
+                <li class="item-prop">
+                    <h4 class="title-prop">titleButton</h4>
+                    <p class="detail-prop">
+                        Esta sirve para establecer el contenido dentro del boton para abrir el modal.
+                    </p>
+                </li>
+            </ul>
+            
+          </div>
+
+    </main>
+</Layout>

@@ -1,0 +1,62 @@
+.section-components {
+    width: 100%;
+    height: 100vh;
+    background-color: #0d0f14;
+    padding: 10px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-components {
+    width: 60%;
+    overflow-y: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.title-components {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+.list-components {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container-component {
+
+}
+
+.title-component {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.container-code {
+    padding: 20px;
+  background-color: #171717;
+    display: flex;
+    gap: 10px;
+}   
+.title-code-component {
+    color: #57a865;
+
+}
+.code {
+
+}
+
+.show-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+

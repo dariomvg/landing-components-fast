@@ -1,0 +1,59 @@
+.header {
+    width:100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 999;
+    border-bottom: thin solid #fff;
+}
+
+.sec-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-header {
+    background: linear-gradient(to right,#3245ff, #b845ed);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1.2);
+    font-size: 20px;
+}
+
+.sec-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.link {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: color .5s;
+    font-weight: 500;
+}
+
+.link:hover {
+    color: #b845ed
+}
+
+.container-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-contact {
+    padding: 5px;
+    border-radius: 5px;
+}
+.img-contact:hover {
+    background-color: rgba(128, 128, 128, 0.359);
+}

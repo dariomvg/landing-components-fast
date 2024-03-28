@@ -1,0 +1,143 @@
+.section-colors {
+  width: 100%;
+  height: 100vh;
+  background-color: #0d0f14;
+  padding: 10px;
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+.container-colors {
+  width: 60%;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.title-section-colors {
+  color: #fff;
+  padding-bottom: 16px;
+}
+.title-colors {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+.list-colors {
+  width: 100%;
+  background-color: #171717;
+  display: flex;
+  color: #898989;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.item-color {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.title-color {
+  width: 80px;
+}
+.code-color {
+      color: #fff;
+  font-weight: 600;
+}
+
+.show-color {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.violet {
+  background-color: #646cff;
+}
+.blue {
+  background-color: #149eca;
+}
+.green {
+  background-color: #28a745;
+}
+.gray {
+  background-color: #1f1f1f;
+}
+.yellow {
+  background-color: #ffc107;
+}
+.orange {
+  background-color: #fd7e14;
+}
+.purple {
+  background-color: #6f42c1;
+}
+.red {
+  background-color: #dc3545;
+}
+
+.teal {
+  background-color: #20c997;
+}
+
+.transparent {
+  background-color: #ffffff18;
+}
+
+.dark {
+  background-color: #0000004b;
+}
+
+.light {
+  background-color: #ffffff4b;
+}
+
+/* colors variant */
+.violet-v {
+  color: #bf6ecd;
+  background-color: #2e1938;
+}
+.blue-v {
+  color: #2c99ff;
+  background-color: #10233d;
+}
+.green-v {
+  color: #62c070;
+  background-color: #0f2e18;
+}
+.gray-v {
+  color: #fff;
+  background-color: #1f1f1f;
+}
+.yellow-v {
+  color: #ff9708;
+  background-color: #331b00;
+}
+.orange-v {
+  color: #ff4831;
+  background-color: #49191b;
+}
+
+.red-v {
+  color: #ff0000;
+  background-color: #491215;
+}
+
+.teal-v {
+  color: #0aac71;
+  background-color: #083a33;
+}
+.pink-v {
+  color: #ec5f89;
+  background-color: #4f1c31;
+}

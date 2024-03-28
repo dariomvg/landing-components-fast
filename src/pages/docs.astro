@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Line from "../components/Line.astro";
+import "../styles/docs.css";
+---
+
+<Layout
+  title="docs - introducción de como usar los componentes" 
+  description="página de introducción que muestra como instalar el paquete en tu projecto y cómo empezar a usarlo, una guia básica"
+>
+    <main class='section-docs'>
+        <section class="content">
+          <h1 class="title">Introducción</h1>
+          <Line />
+          <div id="instalacion" class="container-details">
+            <h2 class="title-docs">Instalación</h2>
+            <p class="detail-docs">Pueden instalar el paquete directamente desde npm:</p>
+            <div class="container-code">
+              <p class="code">npm i <b class="paquete-install">components-fast</b></p> 
+            </div>
+          </div>
+
+          <div id="imports" class="container-details">
+            <h2 class="title-docs">Imports</h2>
+             <p class="detail-docs">Puedes importar los diferentes componentes que necesites de ésta forma:</p>
+             <div class="container-code">
+              <p class="code"><b class="import">import</b> <b class="imp-component">{"{ Button }"}</b> from <b class="paquete">"components-fast";</b></p>
+             </div>
+            <p class="detail-docs">...y también puedes importar múltiples componentes en una sola línea</p>
+            <div class="container-code">
+              <p class="code"><b class="import">import</b> <b class="imp-component">{"{ Button, Badge, Toggle }"}</b> from <b class="paquete">"components-fast";</b></p>
+            </div>
+          </div>
+
+          <div id="usos" class="container-details">
+            <h2 class="title-docs">Uso</h2>
+             <div class="container-code-function">
+              <p class="code"><b class="import">import</b> <b class="imp-component">{"{ Badge }"}</b> from <b class="paquete">"components-fast";</b></p>
+              <br>
+              <p class="code"><b class="exports">export default function</b> App () {"{"}</p>
+              <p class="code"><b class="component">{`<Badge variant="teal">Node.js</Badge>`}</b></p>
+              <p class="code">{"}"}</p>
+             </div>
+          </div>
+
+          <div id="props" class="container-details">
+            <h2 class="title-docs">Props</h2>
+            <p class="detail-docs">Algunos componentes reciben unas props para hacerlas mas dinámicas y flexible a tus proyectos, aca hay 2 ejemplos:</p>
+            <div class="container-code-function">
+                <p class="code"><b class="import">import</b> <b class="imp-component">{"{ Button }"}</b> from <b class="paquete">"components-fast";</b></p>
+              <br>
+
+                <p class="code"><b class="exports">export default function</b> App () {"{"}</p>
+                <p class="code"><b class="component">{`<Button bg="blue" onClick={function}>My button</Button>`}</b></p>
+                <p class="code">{"}"}</p>
+            </div>
+            <Line />
+
+            <div class="container-code">
+                <p class="code"><b class="import">import</b> <b class="imp-component">{"{ CarrouselImages }"}</b> from <b class="paquete"> "components-fast";</b></p>
+              <br>
+                <p class="code"><b class="exports">export default function</b> App () {"{"}</p>
+                <p class="code"><b class="component">  {`<CarrouselImages images={arrayImages} auto={true} time={3000} width="400px" height="350px"/>`}</b></p>
+                <p class="code">{"}"}</p>
+            </div>
+          </div>
+
+          <div id="run" class="container-details">
+            <h2 class="title-docs">Corre el proyecto</h2>
+            <p class="detail-docs">Verifica los comandos en package.json o corre el comando</p>
+            <div class="container-code-function">
+                <p class="code">npm run</p>
+               </div>
+               <p class="detail-docs">Y luego corre este comando, visita localhost y Listo!</p>
+             <div class="container-code-function">
+              <p class="code">npm run dev</p>
+             </div>
+          </div>
+          <Line />
+          <footer class="footer-docs">
+            <p class="title-footer">Visita otras secciones más detalladas para profundizar más sobre los componentes</p>
+            <div class="container-links-footer">
+              <a href="/colores" class="link-footer">Colores</a>
+            <a href="/props" class="link-footer">Props</a>
+            <a href="/componentes" class="link-footer">Componentes</a>  
+            </div>
+            
+          </footer>
+        </section>
+      </main>
+</Layout>

@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo.webp";
+import iconGithub from "../assets/github.svg";
+import iconNpm from "../assets/npm.svg";
+import iconLinkedin from "../assets/linkedin.svg";
+import "../styles/Header.css";
+---
+
+<header class="header">
+    <div class="sec-logo">
+        <h1 class="title-header">Components Fast</h1>
+        <Image src={logo} width="30" height="30" alt="logo de components fast" />
+    </div>
+
+    <div class="sec-links">
+        <a href="/" class="link">Principal</a>
+        <a href="/docs" class="link">Introducción</a>
+        <a href="/colores" class="link">Colores</a>
+        <a href="/componentes" class="link">Componentes</a>
+        <a href="/props" class="link">props</a>
+    </div>  
+
+    <div class="container-contacts">
+        <a href="https://github.com/dariomvg/components-ui" target="_blank">
+            <Image src={iconGithub} width="45" height="45" alt="logo github" class="img-contact" loading="lazy" />
+        </a>
+        <a href="https://www.npmjs.com/package/components-fast" target="_blank">
+            <Image src={iconNpm} width="45" height="45" alt="logo npm" class="img-contact" loading="lazy" />
+        </a>
+        <a href="https://www.linkedin.com/in/dario-martinez-597486291/" target="_blank" >
+            <Image src={iconLinkedin} width="45" height="45" alt="logo linkedin" class="img-contact" loading="lazy" />
+        </a>   
+    </div>
+</header>

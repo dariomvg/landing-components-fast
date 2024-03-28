@@ -1,0 +1,57 @@
+---
+import { Image } from "astro:assets";
+import iconArrow from "../assets/arrow.svg";
+import iconCopy from "../assets/copy.svg";
+import "../styles/Home.css";
+---
+
+<main class="section-home">
+    <div class="container">
+      <h1 class="title-home">Components fast</h1>
+      <p class="detail-home">
+        Catálogo de componentes React, donde encontrarás componentes listos
+        para usar en tus proyectos. Diseñada para simplificar y acelerar tu
+        desarrollo con React.
+      </p>
+      <p id="container" class="container-title-copy"></p>
+      <div class="container-link-home">
+        <a href="/docs" class="link-home">
+          Get Started
+        </a>
+        <div class="title-init">
+          <Image
+            src={iconArrow}
+            width="25"
+            height="25"
+            alt="icon arrow"
+            loading="lazy"
+          />
+          <p>npm i components-fast</p>
+          <Image
+            src={iconCopy}
+            width="25"
+            height="25"
+            alt="icon copy"
+            class="icon-copy"
+            id="btn"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </main>
+  
+ <script>
+  const btn = document.getElementById("btn");
+  const container = document.getElementById("container");
+  const message = document.createTextNode("¡Copiado!");
+  btn.addEventListener("click", () => {
+    navigator.clipboard.writeText("npm i components-fast")
+      container.appendChild(message);
+      container.classList.add('active');
+      setTimeout(() => {
+        container.classList.remove('active');
+        container.removeChild(message);
+      }, 3000)
+  })
+</script> 
