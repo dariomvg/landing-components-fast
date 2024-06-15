@@ -2,6 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Line from "../components/Line.astro";
 import "../styles/page-components.css";
+import imgButton from "../assets/images-code/button.png"
+import imgBadge from "../assets/images-code/badge.png"
+import imgToggle from "../assets/images-code/toggle.png"
+import imgLoader from "../assets/images-code/loader.png"
+import imgModal from "../assets/images-code/modal.png"
+import imgCollapse from "../assets/images-code/collapse.png"
+import imgCarrousel from "../assets/images-code/carrousel.png"
+import imgCard from "../assets/images-code/card.png"
+
 import { Button, Card, Loader, Toggle, Modal, Badge, Collapse, CarrouselImages } from "../views/index.jsx";
 ---
 
@@ -16,84 +25,57 @@ import { Button, Card, Loader, Toggle, Modal, Badge, Collapse, CarrouselImages }
             <ul class="list-components">
                 <li id="button" class="container-component">
                     <h4 class="title-component">Button</h4>
-                    <div class="container-code">
-                        <p class="title-code-component">{`<Button`}</p>
-                        <p class="code">{` bg="teal" width="auto" onClick={yourFunction}>Click here`}</p>
-                        <p class="title-code-component">{`</Button>`}</p>
-                    </div>
+                        <img src={imgButton.src} width="100%" height="auto" alt="image button">
+                    
                     <div class="show-component">
                         <Button client:visible />
                     </div>
                 </li>
                 <li id="badge" class="container-component">
                     <h4 class="title-component">Badge</h4>
-                    <div class="container-code">
-                        <p class="title-code-component">{`<Badge`}</p>
-                        <p class="code">{`variant="teal" width="auto">Node.js`}</p>
-                        <p class="title-code-component">{`</Badge>`}</p>
-                    </div>
+                    <img src={imgBadge.src} width="100%" height="auto" alt="image button">
                     <div class="show-component">
                         <Badge>Node.js</Badge>
                     </div>
                 </li>
                 <li id="toggle" class="container-component">
                     <h4 class="title-component">Toggle</h4>
-                    <div class="container-code">
-                        <p class="title-code-component">{`<Toggle`}</p>
-                        <p class="code">{`onClick="yourFunction" />`}</p>
-                    </div>
+                    <img src={imgToggle.src} width="100%" height="auto" alt="image button">
                     <div class="show-component">
                         <Toggle />
                     </div>
                 </li>
                 <li id="loader" class="container-component">
                     <h4 class="title-component">Loader</h4>
-                    <div class="container-code">
-                        <p class="code title-code-component">{`<Loader />`}</p>
-                    </div>
+                    <img src={imgLoader.src} width="100%" height="auto" alt="image button">
                     <div class="show-component">
                         <Loader />
                     </div>
                 </li>
                 <li id="card" class="container-component">
                     <h4 class="title-component">Card</h4>
-                    <div class="container-code">
-                        <p class="title-code-component">{`<Card `}</p>
-                        <p class="code">{`bg="light">esta es mi card personal`}</p>
-                        <p class="title-code-component">{`</Card>`}</p>
-                    </div>
+                    <img src={imgCard.src} width="100%" height="auto" alt="image button">
                     <div class="show-component">
                         <Card>esta es mi card personal</Card>
                     </div>
                 </li>
                 <li id="modal" class="container-component">
                     <h4 class="title-component">Modal</h4>
-                    <div class="container-code">
-                        <p class="title-code-component">{`<Modal`}</p>
-                        <p class="code">{`titleButton="open modal">Este es mi modal`}</p>
-                        <p class="title-code-component">{`</Modal>`}</p>
-                    </div>
+                    <img src={imgModal.src} width="100%" height="auto" alt="image button">
                     <div class="show-component">
                         <Modal client:visible />
                     </div>
                 </li>
                 <li id="collapse" class="container-component">
                     <h4 class="title-component">Collapse</h4>
-                    <div class="container-code">
-                        <p class="title-code-component">{`<Collapse`}</p>
-                        <p class="code">{`title="título 1" bg="dark">Este es mi contenido`}</p>
-                        <p class="title-code-component">{`</Collapse>`}</p>
-                    </div>
+                    <img src={imgCollapse.src} width="100%" height="auto" alt="image button">
                     <div class="show-component">
                         <Collapse client:visible />
                     </div>
                 </li>
                 <li id="carrousel" class="container-component">
                     <h4 class="title-component">CarrouselImages</h4>
-                    <div class="container-code">
-                        <p class="title-code-component">{`<CarrouselImages`}</p>
-                        <p class="code">{`images={arrayImages} auto={true} time={3000} width="100%" height="400px" />`}</p>
-                    </div>
+                    <img src={imgCarrousel.src} width="100%" height="auto" alt="image button">
                     <div class="show-component">
                         <CarrouselImages client:visible />
                     </div>

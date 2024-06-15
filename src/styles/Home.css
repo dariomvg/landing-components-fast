@@ -27,6 +27,7 @@
     font-size: 22px;
     line-height: 1.4;
     font-weight: 500;
+    
 }
 .container-link-home {
     display: flex;
@@ -35,20 +36,26 @@
     gap: 25px;
 }
 .link-home {
-    padding: 16px;
+    padding: 14px;
     background-color: #ffffff;
     border-radius: 30px;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     color: #b845ed;
+    font-family: 'Inconsolata', monospace;
+    border: 1px solid transparent;
+    transition: .5s;
+
+}
+.link-home:hover {
+    transition: .5s;
+    border-color: #b845ed;
 }
 
-
 .title-init {
-    padding: 20px;
-    background-color: #0d0f14e1;
-    border: 2px solid #bc52ee ;
+    padding: 14px;
+    background-color: #0d0f14a8;
     font-size: 18px;
     color: #fff;
     display: flex;
@@ -56,11 +63,14 @@
     justify-content: center;
     gap: 10px;
     font-weight: 500;
+    border-radius: 5px;
 }
 .icon-copy {
     cursor: pointer;
 }
-
+.title-install {
+    font-family: 'Inconsolata', monospace;
+}
 .active {
     background-color: #0f2e18;
     color: #62c073;

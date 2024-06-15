@@ -1,16 +1,15 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/logo.webp";
-import iconGithub from "../assets/github.svg";
-import iconNpm from "../assets/npm.svg";
-import iconLinkedin from "../assets/linkedin.svg";
+import iconGithub from "../assets/icons/github.svg";
+import iconNpm from "../assets/icons/npm.svg";
+import iconLinkedin from "../assets/icons/linkedin.svg";
 import "../styles/Header.css";
 ---
 
 <header class="header">
     <div class="sec-logo">
         <h1 class="title-header">Components Fast</h1>
-        <Image src={logo} width="30" height="30" alt="logo de components fast" />
+        <Image src="/logo.webp" width="30" height="30" alt="logo de components fast" />
     </div>
 
     <div class="sec-links">

@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     position: fixed;
     z-index: 999;
-    border-bottom: thin solid #fff;
+    background-color: #fff;
 }
 
 .sec-logo {
@@ -33,14 +33,16 @@
 
 .link {
     font-size: 18px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    transition: color .5s;
+    transition: .5s;
     font-weight: 500;
+    border-bottom: 2px solid transparent;
 }
 
 .link:hover {
-    color: #b845ed
+    transition: .5s;
+    border-color:#b845ed;
 }
 
 .container-contacts {

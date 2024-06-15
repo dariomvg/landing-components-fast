@@ -44,6 +44,7 @@
 .code {
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Inconsolata', monospace;
 }
 
 .container-code-function {
@@ -98,6 +99,4 @@
     color: #909090;
 }
 
-.paquete-install {
-    color: #bc52ee;
-}
+

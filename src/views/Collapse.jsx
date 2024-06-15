@@ -1,6 +1,6 @@
 import { useState } from "react";
-import iconBottom from "../assets/arrow-bottom.svg";
-import iconTop from "../assets/arrow-top.svg";
+import iconBottom from "../assets/icons/arrow-bottom.svg";
+import iconTop from "../assets/icons/arrow-top.svg";
 import "./globals.css";
 
 const Collapse = () => {

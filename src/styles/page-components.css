@@ -34,17 +34,6 @@
     padding-bottom: 20px;
 }
 
-.container-code {
-    padding: 20px;
-  background-color: #171717;
-    display: flex;
-    gap: 10px;
-}   
-.title-code-component {
-    color: #57a865;
-
-}
-
 .show-component {
     display: flex;
     justify-content: center;

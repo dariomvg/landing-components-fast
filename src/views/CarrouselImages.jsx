@@ -1,6 +1,6 @@
 import "./globals.css";
-import iconBack from "../assets/arrow-back.svg";
-import iconNext from "../assets/arrow-next.svg";
+import iconBack from "../assets/icons/arrow-back.svg";
+import iconNext from "../assets/icons/arrow-next.svg";
 import image1 from "../assets/images/image1.jpg";
 import image2 from "../assets/images/image2.jpg";
 import image3 from "../assets/images/image3.jpg";
